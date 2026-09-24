@@ -1,0 +1,1089 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+  --rose: #b7837d;
+  --rose-light: #d8b6b1;
+  --nude: #eadbd4;
+  --cream: #f7f2ed;
+  --light: #fcfaf8;
+  --brown: #5c4843;
+  --dark: #302725;
+  --white: #ffffff;
+  --text: #6d5d59;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* CABEÇALHO */
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  height: 90px;
+  padding: 0 6%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: var(--white);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 7px;
+}
+
+.logo span {
+  display: block;
+  text-align: center;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+nav a {
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.65;
+}
+
+.header-button {
+  padding: 12px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  transition: 0.3s;
+}
+
+.header-button:hover {
+  background: var(--white);
+  color: var(--dark);
+}
+
+.menu-button {
+  display: none;
+
+  border: none;
+  background: transparent;
+
+  color: white;
+  font-size: 25px;
+
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  color: var(--white);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(42, 31, 29, 0.78),
+      rgba(42, 31, 29, 0.25)
+    ),
+    url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1800&q=90')
+    center/cover no-repeat;
+}
+
+.hero-content {
+  width: 88%;
+  max-width: 1300px;
+
+  margin: auto;
+  padding-top: 80px;
+}
+
+.section-label {
+  color: #ead8d4;
+
+  font-size: 8px;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.dark-label {
+  color: var(--rose);
+}
+
+.hero h1 {
+  margin: 25px 0;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(68px, 9vw, 125px);
+  font-weight: 400;
+
+  line-height: 0.85;
+}
+
+.hero h1 em,
+.about h2 em,
+.section-heading h2 em,
+.experience h2 em,
+.team h2 em,
+.booking h2 em {
+  color: var(--rose-light);
+  font-weight: 400;
+}
+
+.hero-description {
+  max-width: 550px;
+
+  color: #eee3df;
+
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+
+  margin-top: 40px;
+}
+
+.button-primary,
+.button-secondary {
+  padding: 15px 24px;
+
+  font-size: 8px;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  transition: 0.3s;
+}
+
+.button-primary {
+  background: var(--white);
+  color: var(--dark);
+}
+
+.button-primary:hover {
+  background: var(--nude);
+}
+
+.button-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+.button-secondary:hover {
+  background: var(--white);
+  color: var(--dark);
+}
+
+.hero-info {
+  position: absolute;
+  right: 6%;
+  bottom: 45px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hero-info span {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+
+.hero-info div {
+  width: 55px;
+  height: 1px;
+
+  background: white;
+}
+
+.hero-info p {
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* SOBRE */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 750px;
+}
+
+.about-content {
+  padding: 110px 12%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--cream);
+}
+
+.about-content h2,
+.section-heading h2,
+.experience-content h2,
+.team-intro h2,
+.booking-intro h2 {
+  margin: 20px 0 30px;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(45px, 5vw, 70px);
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+.about-content > p:not(.section-label) {
+  margin-bottom: 17px;
+
+  color: var(--text);
+
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.about-image img {
+  height: 100%;
+  min-height: 750px;
+}
+
+.about-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  margin-top: 40px;
+  padding-top: 30px;
+
+  border-top: 1px solid #dfcec7;
+}
+
+.about-numbers strong {
+  display: block;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.about-numbers span {
+  color: #8e7772;
+
+  font-size: 7px;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* TRATAMENTOS */
+
+.treatments {
+  padding: 110px 7%;
+
+  background: var(--light);
+}
+
+.section-heading {
+  max-width: 750px;
+
+  margin-bottom: 60px;
+}
+
+.section-heading > p:not(.section-label) {
+  color: var(--text);
+  font-size: 12px;
+}
+
+.treatments-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid #ded4d0;
+  border-left: 1px solid #ded4d0;
+}
+
+.treatment-card {
+  min-height: 390px;
+
+  padding: 45px 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-right: 1px solid #ded4d0;
+  border-bottom: 1px solid #ded4d0;
+
+  transition: 0.4s;
+}
+
+.treatment-card:hover,
+.treatment-card.featured {
+  background: var(--nude);
+}
+
+.treatment-card > span {
+  color: var(--rose);
+
+  font-size: 9px;
+}
+
+.treatment-card h3 {
+  margin: 55px 0 20px;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 29px;
+  font-weight: 500;
+
+  line-height: 1.1;
+}
+
+.treatment-card p {
+  color: var(--text);
+  font-size: 11px;
+}
+
+.treatment-card a {
+  margin-top: auto;
+  padding-top: 30px;
+
+  color: var(--brown);
+
+  font-size: 8px;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* EXPERIÊNCIA */
+
+.experience {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+
+  min-height: 700px;
+
+  background: var(--dark);
+}
+
+.experience-image img {
+  height: 100%;
+  min-height: 700px;
+}
+
+.experience-content {
+  padding: 100px 13%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: white;
+}
+
+.experience-content p:not(.section-label) {
+  color: #cdbfbb;
+  font-size: 12px;
+}
+
+.experience-content a {
+  width: fit-content;
+
+  margin-top: 35px;
+  padding-bottom: 7px;
+
+  border-bottom: 1px solid var(--rose-light);
+
+  color: var(--rose-light);
+
+  font-size: 8px;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* RESULTADOS */
+
+.results {
+  padding: 110px 6%;
+
+  background: var(--cream);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.result-image {
+  position: relative;
+
+  height: 550px;
+
+  overflow: hidden;
+}
+
+.result-image img {
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.7s;
+}
+
+.result-image:hover img {
+  transform: scale(1.04);
+}
+
+.result-image span {
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+
+  padding: 9px 14px;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  color: var(--dark);
+
+  font-size: 8px;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.results-note {
+  margin-top: 15px;
+
+  color: #8f7f7a;
+
+  font-size: 8px;
+}
+
+/* EQUIPE */
+
+.team {
+  padding: 110px 7%;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+
+  background: var(--dark);
+
+  color: white;
+}
+
+.team-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-intro > p:not(.section-label) {
+  color: #c1b6b2;
+  font-size: 12px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.professional-image {
+  height: 480px;
+
+  overflow: hidden;
+}
+
+.professional-image img {
+  height: 100%;
+
+  filter: saturate(0.7);
+
+  transition: 0.6s;
+}
+
+.professional:hover img {
+  transform: scale(1.03);
+}
+
+.professional h3 {
+  margin-top: 18px;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.professional p {
+  color: var(--rose-light);
+
+  font-size: 8px;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* DEPOIMENTO */
+
+.testimonial {
+  padding: 120px 10%;
+
+  text-align: center;
+
+  background: var(--light);
+}
+
+.stars {
+  margin: 25px 0;
+
+  color: var(--rose);
+
+  letter-spacing: 6px;
+}
+
+.testimonial blockquote {
+  max-width: 850px;
+
+  margin: 0 auto 30px;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(30px, 4vw, 48px);
+  font-style: italic;
+
+  line-height: 1.25;
+}
+
+.testimonial strong {
+  display: block;
+
+  font-size: 9px;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.testimonial > span {
+  color: var(--text);
+  font-size: 8px;
+}
+
+/* AGENDAMENTO */
+
+.booking {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background: var(--brown);
+
+  color: white;
+}
+
+.booking-intro {
+  padding: 100px 12%;
+}
+
+.booking-intro > p:not(.section-label) {
+  max-width: 500px;
+
+  color: #dfd0cc;
+
+  font-size: 12px;
+}
+
+.booking-info {
+  margin-top: 50px;
+}
+
+.booking-info div {
+  margin-bottom: 25px;
+}
+
+.booking-info span {
+  color: var(--rose-light);
+
+  font-size: 8px;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.booking-info p {
+  margin-top: 5px;
+
+  color: white !important;
+  font-size: 11px !important;
+}
+
+.booking-form {
+  padding: 90px 10%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+  align-content: center;
+
+  background: #493a37;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full {
+  grid-column: span 2;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+
+  color: #d8c5c0;
+
+  font-size: 8px;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 13px 2px;
+
+  border: none;
+  border-bottom: 1px solid #79625d;
+
+  outline: none;
+
+  background: transparent;
+
+  color: white;
+}
+
+.form-group select option {
+  color: black;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.booking-form button {
+  grid-column: span 2;
+
+  margin-top: 20px;
+  padding: 16px;
+
+  border: none;
+
+  background: var(--cream);
+
+  color: var(--dark);
+
+  font-size: 8px;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.booking-form button:hover {
+  background: var(--nude);
+}
+
+#booking-message {
+  grid-column: span 2;
+
+  color: #f0dfda;
+
+  font-size: 10px;
+}
+
+/* CONTATO */
+
+.contact {
+  padding: 80px 7%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 60px;
+
+  background: var(--cream);
+}
+
+.contact h2 {
+  margin-top: 15px;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(40px, 5vw, 65px);
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+.contact-details {
+  min-width: 350px;
+}
+
+.contact-details div {
+  padding: 15px 0;
+
+  border-bottom: 1px solid #d9cac4;
+}
+
+.contact-details span {
+  color: var(--rose);
+
+  font-size: 7px;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.contact-details p {
+  color: var(--text);
+
+  font-size: 11px;
+}
+
+/* RODAPÉ */
+
+footer {
+  padding: 60px 7% 25px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 50px;
+
+  background: #241d1b;
+
+  color: #a99a96;
+}
+
+.footer-logo {
+  color: white;
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+
+  letter-spacing: 7px;
+}
+
+.footer-brand > p {
+  font-size: 8px;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-links a {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 9px;
+}
+
+.footer-social p {
+  margin-bottom: 10px;
+
+  font-size: 9px;
+}
+
+.footer-bottom {
+  grid-column: 1 / -1;
+
+  padding-top: 25px;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px solid #3b302d;
+
+  font-size: 8px;
+}
+
+/* BOTÃO FLUTUANTE */
+
+.floating-booking {
+  position: fixed;
+
+  right: 25px;
+  bottom: 25px;
+
+  z-index: 900;
+
+  width: 68px;
+  height: 68px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: var(--rose);
+
+  color: white;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  font-size: 8px;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.floating-booking:hover {
+  transform: translateY(-3px);
+  background: var(--brown);
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+  nav {
+    position: absolute;
+
+    top: 90px;
+    left: 0;
+    right: 0;
+
+    display: none;
+    flex-direction: column;
+
+    padding: 30px;
+
+    background: var(--dark);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .treatments-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .team {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* CELULAR */
+
+@media (max-width: 650px) {
+
+  header {
+    height: 75px;
+  }
+
+  nav {
+    top: 75px;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .hero h1 {
+    font-size: 62px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: fit-content;
+  }
+
+  .hero-info {
+    display: none;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    padding: 80px 8%;
+  }
+
+  .about-image img {
+    height: 450px;
+    min-height: 450px;
+  }
+
+  .about-numbers {
+    grid-template-columns: 1fr;
+  }
+
+  .treatments {
+    padding: 80px 6%;
+  }
+
+  .treatments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-image img {
+    min-height: 450px;
+    height: 450px;
+  }
+
+  .experience-content {
+    padding: 80px 8%;
+  }
+
+  .results {
+    padding: 80px 6%;
+  }
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-image {
+    height: 450px;
+  }
+
+  .team {
+    padding: 80px 6%;
+    gap: 50px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .professional-image {
+    height: 500px;
+  }
+
+  .booking {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-form {
+    grid-template-columns: 1fr;
+
+    padding: 70px 8%;
+  }
+
+  .form-group.full,
+  .booking-form button,
+  #booking-message {
+    grid-column: span 1;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-details {
+    width: 100%;
+    min-width: 0;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+}
