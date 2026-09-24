@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ÉLORA | Estética & Bem-Estar</title>
+
+  <meta
+    name="description"
+    content="Clínica de estética e bem-estar. Projeto demonstrativo."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+
+  <header id="header">
+
+    <a href="#inicio" class="logo">
+      ÉLORA
+      <span>ESTÉTICA & BEM-ESTAR</span>
+    </a>
+
+    <button
+      class="menu-button"
+      onclick="toggleMenu()"
+      aria-label="Abrir menu"
+    >
+      ☰
+    </button>
+
+    <nav id="nav">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">A Clínica</a>
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#equipe">Especialistas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a href="#agendamento" class="header-button">
+      Agendar avaliação
+    </a>
+
+  </header>
+
+
+  <main>
+
+    <!-- CAPA -->
+
+    <section class="hero" id="inicio">
+
+      <div class="hero-content">
+
+        <p class="section-label">
+          Estética • Beleza • Bem-estar
+        </p>
+
+        <h1>
+          Sua beleza,<br>
+          sua <em>essência.</em>
+        </h1>
+
+        <p class="hero-description">
+          Tratamentos personalizados para valorizar sua beleza
+          natural e proporcionar uma experiência de cuidado,
+          confiança e bem-estar.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#agendamento" class="button-primary">
+            Agendar avaliação
+          </a>
+
+          <a href="#tratamentos" class="button-secondary">
+            Conhecer tratamentos
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="hero-info">
+        <span>ÉLORA</span>
+        <div></div>
+        <p>Cuidado que transforma</p>
+      </div>
+
+    </section>
+
+
+    <!-- SOBRE -->
+
+    <section class="about" id="sobre">
+
+      <div class="about-content">
+
+        <p class="section-label dark-label">
+          Sobre a ÉLORA
+        </p>
+
+        <h2>
+          Cuidar de você<br>
+          é a nossa <em>especialidade.</em>
+        </h2>
+
+        <p>
+          A ÉLORA nasceu para proporcionar uma nova experiência
+          em estética e bem-estar, combinando tecnologia,
+          atendimento humanizado e tratamentos personalizados.
+        </p>
+
+        <p>
+          Cada protocolo é desenvolvido de acordo com as
+          necessidades e objetivos de cada pessoa, respeitando
+          sua individualidade e beleza natural.
+        </p>
+
+        <div class="about-numbers">
+
+          <div>
+            <strong>1.500+</strong>
+            <span>Clientes atendidos</span>
+          </div>
+
+          <div>
+            <strong>15+</strong>
+            <span>Tratamentos</span>
+          </div>
+
+          <div>
+            <strong>98%</strong>
+            <span>Satisfação</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=85"
+          alt="Tratamento estético facial"
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- TRATAMENTOS -->
+
+    <section class="treatments" id="tratamentos">
+
+      <div class="section-heading">
+
+        <p class="section-label dark-label">
+          Nossos cuidados
+        </p>
+
+        <h2>
+          Tratamentos <em>ÉLORA.</em>
+        </h2>
+
+        <p>
+          Protocolos pensados para cuidar da sua pele,
+          corpo e autoestima.
+        </p>
+
+      </div>
+
+
+      <div class="treatments-grid">
+
+        <article class="treatment-card">
+
+          <span>01</span>
+
+          <h3>Limpeza de Pele</h3>
+
+          <p>
+            Higienização profunda para remover impurezas,
+            controlar a oleosidade e devolver luminosidade à pele.
+          </p>
+
+          <a href="#agendamento">
+            Saiba mais →
+          </a>
+
+        </article>
+
+
+        <article class="treatment-card featured">
+
+          <span>02</span>
+
+          <h3>Revitalização Facial</h3>
+
+          <p>
+            Protocolo personalizado para melhorar textura,
+            hidratação e aparência da pele.
+          </p>
+
+          <a href="#agendamento">
+            Saiba mais →
+          </a>
+
+        </article>
+
+
+        <article class="treatment-card">
+
+          <span>03</span>
+
+          <h3>Massagem Relaxante</h3>
+
+          <p>
+            Uma experiência de relaxamento desenvolvida
+            para aliviar tensões e proporcionar bem-estar.
+          </p>
+
+          <a href="#agendamento">
+            Saiba mais →
+          </a>
+
+        </article>
+
+
+        <article class="treatment-card">
+
+          <span>04</span>
+
+          <h3>Drenagem Linfática</h3>
+
+          <p>
+            Técnica de massagem corporal voltada ao
+            bem-estar e ao cuidado estético.
+          </p>
+
+          <a href="#agendamento">
+            Saiba mais →
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- EXPERIÊNCIA -->
+
+    <section class="experience">
+
+      <div class="experience-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=85"
+          alt="Experiência de bem-estar"
+        >
+
+      </div>
+
+
+      <div class="experience-content">
+
+        <p class="section-label">
+          Experiência ÉLORA
+        </p>
+
+        <h2>
+          Um momento<br>
+          feito para <em>você.</em>
+        </h2>
+
+        <p>
+          Mais do que tratamentos estéticos, criamos
+          momentos de cuidado. Da recepção ao atendimento,
+          cada detalhe foi pensado para que você se sinta
+          confortável e especial.
+        </p>
+
+        <a href="#agendamento">
+          Quero viver essa experiência
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- RESULTADOS -->
+
+    <section class="results" id="resultados">
+
+      <div class="section-heading">
+
+        <p class="section-label dark-label">
+          Resultados
+        </p>
+
+        <h2>
+          Beleza que respeita<br>
+          sua <em>individualidade.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="results-grid">
+
+        <div class="result-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=85"
+            alt="Cuidados com a pele"
+          >
+
+          <span>Cuidados faciais</span>
+
+        </div>
+
+
+        <div class="result-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=85"
+            alt="Bem-estar e estética"
+          >
+
+          <span>Bem-estar</span>
+
+        </div>
+
+
+        <div class="result-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=85"
+            alt="Tratamento personalizado"
+          >
+
+          <span>Cuidado personalizado</span>
+
+        </div>
+
+      </div>
+
+      <p class="results-note">
+        Imagens ilustrativas utilizadas neste projeto demonstrativo.
+      </p>
+
+    </section>
+
+
+    <!-- ESPECIALISTAS -->
+
+    <section class="team" id="equipe">
+
+      <div class="team-intro">
+
+        <p class="section-label">
+          Nossa equipe
+        </p>
+
+        <h2>
+          Cuidado feito<br>
+          por <em>especialistas.</em>
+        </h2>
+
+        <p>
+          Profissionais dedicadas a oferecer um atendimento
+          acolhedor, responsável e personalizado.
+        </p>
+
+      </div>
+
+
+      <div class="team-grid">
+
+        <article class="professional">
+
+          <div class="professional-image">
+            <img
+              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=85"
+              alt="Profissional da clínica"
+            >
+          </div>
+
+          <h3>Dra. Helena Martins</h3>
+
+          <p>Biomedicina Estética</p>
+
+        </article>
+
+
+        <article class="professional">
+
+          <div class="professional-image">
+            <img
+              src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=800&q=85"
+              alt="Profissional da clínica"
+            >
+          </div>
+
+          <h3>Laura Mendes</h3>
+
+          <p>Esteticista & Cosmetóloga</p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- DEPOIMENTO -->
+
+    <section class="testimonial">
+
+      <p class="section-label dark-label">
+        Quem viveu a experiência
+      </p>
+
+      <div class="stars">
+        ★★★★★
+      </div>
+
+      <blockquote>
+        “Desde o primeiro atendimento me senti acolhida.
+        O cuidado, o ambiente e a atenção aos detalhes
+        tornaram a experiência incrível.”
+      </blockquote>
+
+      <strong>Camila R.</strong>
+
+      <span>Cliente ÉLORA</span>
+
+    </section>
+
+
+    <!-- AGENDAMENTO -->
+
+    <section class="booking" id="agendamento">
+
+      <div class="booking-intro">
+
+        <p class="section-label">
+          Seu momento
+        </p>
+
+        <h2>
+          Agende sua<br>
+          <em>avaliação.</em>
+        </h2>
+
+        <p>
+          Preencha seus dados e escolha o tratamento
+          que deseja conhecer.
+        </p>
+
+
+        <div class="booking-info">
+
+          <div>
+            <span>WhatsApp</span>
+            <p>(43) 99999-9999</p>
+          </div>
+
+          <div>
+            <span>Horário</span>
+            <p>Segunda a sábado • 09h às 19h</p>
+          </div>
+
+          <div>
+            <span>Localização</span>
+            <p>Londrina • Paraná</p>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <form
+        class="booking-form"
+        onsubmit="makeAppointment(event)"
+      >
+
+        <div class="form-group">
+
+          <label for="name">
+            Nome
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            placeholder="Seu nome"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="phone">
+            WhatsApp
+          </label>
+
+          <input
+            type="tel"
+            id="phone"
+            placeholder="(00) 00000-0000"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="treatment">
+            Tratamento
+          </label>
+
+          <select id="treatment" required>
+
+            <option value="">
+              Escolha um tratamento
+            </option>
+
+            <option>Limpeza de Pele</option>
+            <option>Revitalização Facial</option>
+            <option>Massagem Relaxante</option>
+            <option>Drenagem Linfática</option>
+            <option>Avaliação Personalizada</option>
+
+          </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="date">
+            Data desejada
+          </label>
+
+          <input
+            type="date"
+            id="date"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group full">
+
+          <label for="message">
+            Observações
+          </label>
+
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="Existe algo que gostaria de nos contar?"
+          ></textarea>
+
+        </div>
+
+
+        <button type="submit">
+          Solicitar agendamento
+        </button>
+
+        <p id="booking-message"></p>
+
+      </form>
+
+    </section>
+
+
+    <!-- CONTATO -->
+
+    <section class="contact" id="contato">
+
+      <div>
+
+        <p class="section-label dark-label">
+          Visite a ÉLORA
+        </p>
+
+        <h2>
+          Seu momento de<br>
+          cuidado começa aqui.
+        </h2>
+
+      </div>
+
+
+      <div class="contact-details">
+
+        <div>
+          <span>Endereço</span>
+          <p>Centro • Londrina, PR</p>
+        </div>
+
+        <div>
+          <span>Telefone</span>
+          <p>(43) 99999-9999</p>
+        </div>
+
+        <div>
+          <span>E-mail</span>
+          <p>contato@eloraestetica.com.br</p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- RODAPÉ -->
+
+  <footer>
+
+    <div class="footer-brand">
+
+      <div class="footer-logo">
+        ÉLORA
+      </div>
+
+      <p>
+        Estética & Bem-Estar
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="#sobre">A Clínica</a>
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#equipe">Especialistas</a>
+      <a href="#agendamento">Agendamento</a>
+
+    </div>
+
+
+    <div class="footer-social">
+      <p>Instagram</p>
+      <p>WhatsApp</p>
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 ÉLORA Estética & Bem-Estar
+      </p>
+
+      <p>
+        Projeto fictício desenvolvido para portfólio.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- BOTÃO FLUTUANTE -->
+
+  <button
+    class="floating-booking"
+    onclick="goToBooking()"
+  >
+    Agendar
+  </button>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
